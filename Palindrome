@@ -1,0 +1,40 @@
+Problem Statement:
+Consider a scenario, where there exists two positive numbers 'n1' and 'n2'. The numbers 'n1' and 'n2' follows certain set of constraints:
+
+They are always positive
+They can never hold a value greater than 100
+Compute the result 'r' using the formula given below:
+
+r = max⁡(n1*n2) for all 10<=n1,n2<100, such that 'r' is equivalent to its reverse.
+Input Format
+
+The maximum value of 'n1' and 'n2'.
+
+Do not print additional messages.
+
+Constraints
+
+10 <= n1, n2 < 100
+
+Both are always positive.
+
+Output Format
+
+The result 'r', if it validates the state, print "Not a valid state" in case of non-valid state.
+
+Do not print additional messages.
+
+Sample Input 0
+
+99
+99
+Sample Output 0
+
+9009
+Explanation 0
+
+Value of 'n1' = 99
+
+Value of 'n2' = 99
+
+Hence, result 'r' = max (n1 * n2) and 'r' is a palindrome.
