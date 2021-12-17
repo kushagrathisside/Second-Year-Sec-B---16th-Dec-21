@@ -1,0 +1,68 @@
+Problem:
+There is a night watchman Happu Singh in the Gokuldham Co-operative Housing Society. Among his numerous responsibilities, there is one in which he has to turn on society's lights at the start of his patrol.
+
+The society has n light bulbs. Each light bulb is connected to an on-off toggle switch. If the switch is pressed once the light bulb is turned on. If the switch is pressed again, the light bulb is turned off. If the switch is pressed once more, the light bulb is again turned on, and the process continues.
+
+Happu Singh is getting bored. So he invents a plan to amuse himself. He patrols the society exactly n times, and at the ith patrol, he toggles only the light bulb switches that are divisible by i.
+
+Your task is to determine whether the last bulb is on or off after Happu Singh's n patrols are over.
+
+Input Format
+
+The first line will be T which represents the number of Test Cases.
+
+The following T lines will represent n i.e., the number of light bulbs in the society.
+
+Constraints
+
+1<= T <= 100
+
+1<= n <= 10000
+
+Output Format
+
+Each output will be displayed in next line. The output will be "on" or "off" depending on whether the last light bulb of each test case is switched on or off.
+
+Sample Input 0
+
+3
+1
+3
+4
+Sample Output 0
+
+on
+off
+on
+Explanation 0
+
+Hint: You can use an array to store the current state of the light bulbs
+
+
+n=1 : Happu Singh patrols the society once
+
+When i=1, Happu Singh toggles light bulb 1 to "on" state
+
+
+
+
+n=3 : Happu Singh patrols the society three times
+
+When i=1, Happu Singh toggles the light bulb 1, 2 and 3 to "on" state
+
+When i=2, Happu Singh toggles the light bulb 2 to "off" state
+
+When i=3, Happu Singh toggles the light bulb 3 to "off" state
+
+
+
+
+n=4 : Happu Singh patrols the society four times
+
+When i=1, Happu Singh toggles the light bulb 1, 2, 3 and 4 to "on" state
+
+When i=2, Happu Singh toggles the light bulb 2 and 4 to "off" state
+
+When i=3, Happu Singh toggles the light bulb 3 to "off" state
+
+When i=4, Happu Singh toggles the light bulb 4 to "on" state
