@@ -66,3 +66,46 @@ When i=2, Happu Singh toggles the light bulb 2 and 4 to "off" state
 When i=3, Happu Singh toggles the light bulb 3 to "off" state
 
 When i=4, Happu Singh toggles the light bulb 4 to "on" state
+
+
+
+
+SOLUTION:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int n;
+        scanf("%d",&n);
+        int arr[n];
+        for(int i=1;i<=n;i++)
+        {
+            arr[i]=0;
+        }
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=n;j++)
+            {
+                if(j%i==0)
+                {
+                    if(arr[j]==0)
+                        arr[j]=1;
+                    else
+                        arr[j]=0;
+                }
+            }
+        }
+        if(arr[n]==0)
+            printf("off\n");
+        else
+            printf("on\n");
+    }
+    return 0;
+}
